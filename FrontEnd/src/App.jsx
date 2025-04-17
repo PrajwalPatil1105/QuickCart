@@ -5,8 +5,8 @@ import {
   Route,
   useLocation,
 } from "react-router-dom";
-import Dashboard from "./components/Dashboard";
-import Cart from "./components/Cart";
+import Dashboard from "./Components/Dashboard";
+import Cart from "./Components/Cart";
 import Checkout from "./Components/Checkout";
 import Account from "./Components/Account";
 import Navbar from "./Components/Navbar";
