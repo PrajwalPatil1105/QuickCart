@@ -41,7 +41,7 @@ function Navbar({ cartItems }) {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center">
+          <Link to="/dashboard" className="flex items-center">
             <span className="text-2xl font-bold text-blue-600 dark:text-blue-400">
               QuickCart
             </span>
@@ -50,7 +50,7 @@ function Navbar({ cartItems }) {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             <Link
-              to="/"
+              to="/dashboard"
               className={`font-medium hover:text-blue-600 dark:hover:text-blue-400 ${
                 location.pathname === "/dashboard"
                   ? "text-blue-600 dark:text-blue-400"
