@@ -1,0 +1,347 @@
+.container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-color: #121212;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.backArrow {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.serMessage {
+  margin-left: 3%;
+  margin-top: 2%;
+  font-family: Poppins;
+  font-size: 1em;
+  font-weight: 500;
+  color: rgb(236, 103, 103);
+  position: absolute;
+}
+
+.loginForm {
+  background: transparent;
+  padding: 40px;
+  border-radius: 10px;
+  width: 375px;
+  text-align: center;
+  margin-left: -3%;
+  margin-top: 6em;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.label {
+  text-align: left;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+.emaildiv {
+  margin-bottom: 8px;
+  height: 3.8em;
+}
+
+.passworddiv {
+  margin-bottom: 10px;
+  height: 3.8em;
+}
+
+.emailinput,
+.passwordinput {
+  width: 25em;
+  padding: 10px;
+  float: left;
+  border: 2px solid #333;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #121212;
+  color: white;
+  outline: none;
+  margin-bottom: 3px;
+  font-family: Poppins;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+}
+
+.emailerr,
+.passworderr {
+  color: red;
+  text-align: left;
+  font-family: Poppins;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+.input::placeholder {
+  color: rgba(99, 99, 100, 1);
+}
+
+.primaryButton {
+  background-color: #3366ff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 23.5em;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 21px;
+}
+
+.or {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0.03em;
+  margin: 5px;
+  margin-left: 5em;
+}
+
+.googleButton {
+  background-color: #3366ff;
+  color: #fff;
+  padding: 7px;
+  border: none;
+  border-radius: 8px;
+  cursor: not-allowed;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  width: 23.5em;
+  gap: 45px;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0.03em;
+}
+
+.googleIcon {
+  width: 28px;
+  height: 28px;
+  margin-left: 10%;
+}
+
+.register {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #aaa;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+.register a {
+  color: #3366ff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.leftDesign {
+  position: absolute;
+  animation: squareMotion1 10s linear infinite;
+}
+
+.rightDesign {
+  position: absolute;
+  animation: squareMotion2 10s linear infinite;
+}
+
+.bottomDesign {
+  position: absolute;
+  animation: squareMotion3 10s linear infinite;
+}
+
+@keyframes squareMotion3 {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(20px, 0px);
+  }
+  50% {
+    transform: translate(-20px, 0px);
+  }
+  75% {
+    transform: translate(-15, 0px);
+  }
+  100% {
+    transform: translate(15, 0);
+  }
+}
+
+@keyframes squareMotion2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(0px, 20px);
+  }
+  50% {
+    transform: translate(0px, -20px);
+  }
+  75% {
+    transform: translate(0, -15px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes squareMotion1 {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(15px, -10px);
+  }
+  50% {
+    transform: translate(-10px, 10px);
+  }
+  75% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.leftDesign {
+  left: 2%;
+  width: 20%;
+  top: 12em;
+}
+
+.rightDesign {
+  left: 94%;
+  width: 6%;
+  bottom: 58%;
+  height: auto;
+}
+
+.bottomDesign {
+  left: 65%;
+  width: 13%;
+  bottom: -1%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .loginForm {
+    padding: 20px;
+    margin-top: 25em;
+  }
+
+  .emailinput,
+  .passwordinput,
+  .usernameinput,
+  .ComPasswordinput {
+    font-size: 12px;
+  }
+
+  .label,
+  .ComPasslabel {
+    font-size: 14px;
+  }
+
+  .primaryButton,
+  .googleButton {
+    font-size: 14px;
+  }
+
+  .or {
+    font-size: 12px;
+  }
+
+  .register {
+    font-size: 12px;
+  }
+
+  .leftDesign {
+    left: -4%;
+    width: 30%;
+  }
+
+  .rightDesign {
+    left: 85%;
+    width: 15%;
+  }
+
+  .bottomDesign {
+    left: 55%;
+    width: 25%;
+  }
+}
+
+@media (max-width: 480px) {
+  .loginForm {
+    margin-left: 7%;
+    margin-top: 10em;
+  }
+
+  .emailinput,
+  .passwordinput,
+  .usernameinput,
+  .ComPasswordinput {
+    font-size: 12px;
+    padding: 12px;
+    width: 26em;
+  }
+  .label,
+  .ComPasslabel {
+    font-size: 12px;
+  }
+
+  .primaryButton {
+    font-size: 12px;
+    padding: 12px;
+    width: 28.3em;
+  }
+
+  .googleButton {
+    font-size: 12px;
+    width: 26.99em;
+    padding: 8px;
+  }
+
+  .or {
+    font-size: 10px;
+    margin-left: 0px;
+  }
+
+  .register {
+    font-size: 10px;
+  }
+
+  .leftDesign {
+    display: none;
+  }
+
+  .rightDesign {
+    display: none;
+  }
+
+  .bottomDesign {
+    left: 50%;
+    width: 30%;
+  }
+}
